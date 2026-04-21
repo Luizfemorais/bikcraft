@@ -1,9 +1,13 @@
+/* Css container  */
+
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 20px 0px 20px;
 }
+
+/* Css botões, botões secundarios, e links */
 
 .btn {
   display: inline-block;
@@ -43,10 +47,6 @@
   transition: 0.3s;
 }
 
-.ponto {
-  color: var(--cor-p1);
-}
-
 .btn:hover {
   background: linear-gradient(#ffb60d, #e59317);
   transition: 0.3s;
@@ -60,6 +60,7 @@
 .btn.secundario:hover {
   background: var(--cor-9);
 }
+
 @media (max-width: 1200px) {
   .btn {
     font-size: 1.125rem;
@@ -73,5 +74,38 @@
   }
   .link {
     font-size: 1.125rem;
+  }
+}
+
+/* Css span ponto amarelo */
+.ponto {
+  color: var(--cor-p1);
+}
+
+/* Banner titulo paginas internas */
+
+.titulo-bg {
+  background: var(--cor-11);
+}
+
+.titulo {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
   }
 }

@@ -26,5 +26,8 @@
 /*  Sessão depoimento  */
 @import "./seguros/seguros.css";
 
-/*  Sessão depoimento  */
+/*  Sessão footer  */
 @import "./global/footer.css";
+
+/*  Sessão termos  */
+@import ".//termos/termos.css";
