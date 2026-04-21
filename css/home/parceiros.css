@@ -1,0 +1,57 @@
+.parceiros {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.parceiros h2 {
+  margin-bottom: 60px;
+}
+
+.parceiro-lista {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.parceiro-lista li {
+  border-left: 2px solid var(--cor-2);
+  display: flex; /* Se não fosse display flex, eu não conseguiria alinhas as imagens dentro da li */
+  padding: 32px;
+}
+
+.parceiro-lista li img {
+  margin: 0 auto; /* com a li sendo display flex, e a gente dizendo que a margin será automática, a gente consegue alinha certinho as imagens na coluna */
+}
+
+.parceiro-lista li:first-child,
+.parceiro-lista li:nth-child(5) {
+  border-left: none;
+}
+
+.parceiro-lista li:nth-child(n + 5) {
+  border-top: 2px solid var(--cor-2);
+}
+
+@media (max-width: 800px) {
+  .parceiros {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .parceiros h2 {
+    margin-bottom: 20px;
+  }
+
+  .parceiro-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .parceiro-lista li:nth-child(n + 3) {
+    border-top: 2px solid var(--cor-2);
+  }
+
+  .parceiro-lista li:nth-child(odd) {
+    border-left: none;
+  }
+}
