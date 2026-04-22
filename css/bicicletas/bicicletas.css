@@ -1,0 +1,119 @@
+.bicicletas-bg {
+  background-image: linear-gradient(
+    to right,
+    var(--cor-0) 30%,
+    var(--cor-11) 0%
+  ); /* usando o gradiente para fazer o efeito de bg pela metade, linear-gradient to right(começa pela direita, cor do bg e em quanto vai começar (30%, segunda cor, e em quanto vai começar (0%) */
+}
+
+.bicicletas-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bicicletas-imagem img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.bicicletas-imagem {
+  position: relative;
+}
+
+.bicicletas-imagem span {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  display: block;
+  font:
+    600 1rem/1.5 "Poppins",
+    sans-serif;
+  color: var(--cor-11);
+  padding: 8px 16px;
+  background: var(--cor-p1);
+  border-radius: 4px 0px 0px 4px;
+}
+
+.bicicletas-informacoes {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start; /* usado para não aumentar o tamanho das linnhas de acordo com a imagem, assim o espaçamento continua fiel ao que colocamos */
+}
+
+.bicicletas-informacoes h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas-informacoes h2::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 12px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.bicicletas-informacoes > p {
+  margin-bottom: 16px;
+  grid-column: 1 /-1;
+}
+
+.bicicletas-informacoes a {
+  place-self: end;
+}
+
+.bicicletas-informacoes li {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.bicicletas-informacoes li img {
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+  .bicicletas-card {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas-card {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .bicicletas-card h2 {
+    margin-bottom: 16px;
+  }
+
+  .bicicletas-imagem span {
+    font-size: 0.875rem;
+    padding: 6px 12px;
+  }
+
+  .bicicletas-informacoes h2::before {
+    display: none;
+  }
+
+  .bicicletas-informacoes ul {
+    margin-bottom: 16px;
+  }
+
+  .bicicletas-informacoes a {
+    margin-top: 16px;
+    grid-column: 1/-1;
+    max-width: 100%;
+    place-self: stretch;
+    justify-content: center;
+  }
+}

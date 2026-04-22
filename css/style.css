@@ -14,6 +14,7 @@
 
 /* Sessão bicicletas */
 @import "./bicicletas/bicicletas-lista-home.css";
+@import "./bicicletas/bicicletas.css";
 /* Sessão tecnologia */
 @import "./home/tecnologia.css";
 
