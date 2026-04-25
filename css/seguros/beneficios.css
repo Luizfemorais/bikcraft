@@ -1,0 +1,60 @@
+.beneficios-bg {
+  background-color: var(--cor-12);
+}
+
+.beneficios {
+  padding: 120px 20px;
+}
+
+.beneficios h2 {
+  margin-bottom: 60px;
+}
+
+.lista-beneficios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Outra maneira que poderiamos usar o grid já responsivo seria usando o auto fit:
+  
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content;
+  enquanto couber elementos ao lado ele vai adicionar com o tamanho maximo do conteudo, e quando for diminuindo atingindo no minimo 280px ele vai quebrar para duas colunas, depois uma e assim por adiante  */
+  gap: 40px 80px;
+}
+
+.lista-beneficios img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.lista-beneficios span {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.lista-beneficios p {
+  max-width: 36ch;
+}
+
+@media (max-width: 800px) {
+  .beneficios {
+    padding: 60px 20px;
+  }
+
+  .beneficios h2 {
+    margin-bottom: 40px;
+  }
+
+  .lista-beneficios {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lista-beneficios {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .lista-beneficios p {
+    max-width: 100%;
+  }
+}

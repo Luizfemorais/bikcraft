@@ -2,7 +2,7 @@
   background-color: var(--cor-11);
 }
 
-.seguro-bg h2 {
+.seguro-bg > h2 {
   padding: 120px 20px 60px 20px;
 }
 

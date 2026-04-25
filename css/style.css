@@ -24,8 +24,10 @@
 /*  Sessão depoimento  */
 @import "./home/depoimento.css";
 
-/*  Sessão depoimento  */
+/*  Sessão seguros  */
 @import "./seguros/seguros.css";
+@import "./seguros/beneficios.css";
+@import "./seguros/perguntas.css";
 
 /*  Sessão footer  */
 @import "./global/footer.css";
