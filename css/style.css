@@ -9,6 +9,9 @@
 @import "./assets/componentes.css";
 @import "./assets/cores.css";
 
+/* Assets de formularios */
+@import "./assets/formulario.css";
+
 /* import css hero */
 @import "./home/introducao.css";
 
@@ -36,3 +39,7 @@
 
 /*  Sessão termos  */
 @import ".//termos/termos.css";
+
+/*  Sessão contato  */
+@import "./contato/contato.css";
+@import "./contato/loja.css";
