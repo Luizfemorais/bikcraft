@@ -1,0 +1,205 @@
+.interna-bg {
+  background-color: var(--cor-11);
+  padding-bottom: 60px;
+}
+
+#bicicleta .titulo p {
+  text-transform: uppercase;
+}
+
+.interna-bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.interna-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.interna-img img {
+  flex: 1;
+  min-width: 200px;
+  object-fit: cover;
+  object-position: right;
+}
+
+.interna-img img:first-child {
+  min-width: 100%;
+}
+
+.interna-conteudo > p {
+  margin-bottom: 32px;
+}
+
+/* Sessão dos botões e detalhes */
+
+.botoes {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+
+.botoes-detalhes {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+}
+
+.botoes span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--cor-12);
+  padding: 6px;
+  border-radius: 4px;
+  font:
+    600 0.75rem/1 "Roboto",
+    sans-serif;
+}
+
+.entrega::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(/img/icones/entrega.svg);
+}
+
+.estoque::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(/img/icones/estoque.svg);
+}
+
+/* Sessão de informações */
+
+.interna-vantagens {
+  margin-bottom: 40px;
+}
+
+.interna-vantagens h4,
+.interna-ficha h4 {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+}
+
+.interna-vantagens ul,
+.interna-ficha ul {
+  background-color: var(--cor-12);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.interna-vantagens ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.interna-vantagens ul li img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.interna-vantagens ul li span {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* Sessão seguros bicicleta */
+
+.bicicleta-seguro-bg {
+  background-color: var(--cor-11);
+  box-shadow:
+    inset 0px 120px var(--cor-0),
+    inset 0px -120px var(--cor-12);
+}
+
+.bicicleta-seguro-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bicicleta-seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bicicleta-seguro-conteudo {
+  display: grid;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  align-self: center;
+  gap: 32px;
+}
+
+@media (max-width: 800px) {
+  .bicicleta-seguro-bg {
+    box-shadow:
+      inset 0px 0px,
+      inset 0px -60px var(--cor-12);
+  }
+  .bicicleta-seguro {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-seguro-conteudo {
+    grid-row: 1;
+    padding-bottom: 0px;
+    padding-top: 40px;
+
+    gap: 20px;
+  }
+}
+
+/* Sessão Ficha tecnica */
+
+.interna-ficha li {
+  border-bottom: 1px solid var(--cor-9);
+}
+
+.interna-ficha p {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+
+.interna-ficha span {
+  color: var(--cor-6);
+}
+
+@media (max-width: 800px) {
+  .interna-bicicletas {
+    grid-template-columns: 1fr;
+  }
+
+  .interna-img {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .botoes {
+    grid-template-columns: 1fr;
+  }
+
+  .botoes a {
+    justify-items: stretch;
+  }
+
+  .interna-vantagens ul {
+    grid-template-columns: 1fr;
+  }
+}
