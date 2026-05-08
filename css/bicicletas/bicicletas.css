@@ -40,6 +40,7 @@
 }
 
 .bicicletas-informacoes {
+  background: url(../../img/dec/top-right.svg) no-repeat top 0px right 0px;
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start; /* usado para não aumentar o tamanho das linnhas de acordo com a imagem, assim o espaçamento continua fiel ao que colocamos */
