@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikcraft - bicicletas eletricas</title>
   <meta name="description" content="Termos e condições.">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
     <div class="header container">
 
       <a href="./">
-        <img src="/img/bikcraft.svg" alt="Logo Bikcraft">
+        <img src="/img/bikcraft.svg" width="136" height="32" alt="Logo Bikcraft">
       </a>
 
       <nav aria-label="primaria">
@@ -42,9 +43,10 @@
         <p class="font-2-l">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
         <a class="btn" href="../bicicletas.html">Escolha a sua</a>
       </div>
-      <div>
-        <img src="/img/fotos/introducao.jpg" alt="Bicicleta preta Nimbus">
-      </div>
+      <picture>
+        <source media="(max-width:800px)" srcset="/img/bicicletas/nimbus.jpg">
+        <img src="/img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta preta Nimbus">
+      </picture>
     </div>
   </main>
 
@@ -53,21 +55,21 @@
     <ul>
       <li>
         <a href="../bicicletas/magic.html">
-          <img src="/img/bicicletas/magic-home.jpg" alt="Bicicleta Magic">
+          <img src="/img/bicicletas/magic-home.jpg" width="920" height="1040" alt="Bicicleta Magic">
           <h3 class="font-1-xl cor-11">Magic Might</h3>
           <span class=" font-2-m cor-8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="../bicicletas/nimbus.html">
-          <img src="/img/bicicletas/nimbus-home.jpg" alt="Bicicleta Nimbus">
+          <img src="/img/bicicletas/nimbus-home.jpg" width="920" height="1040" alt="Bicicleta Nimbus">
           <h3 class="font-1-xl cor-11">Nimbus Stark</h3>
           <span class=" font-2-m cor-8">R$ 4999</span>
         </a>
       </li>
       <li>
         <a href="../bicicletas/nebula.html">
-          <img src="/img/bicicletas/nebula-home.jpg" alt="Bicicleta Nebula">
+          <img src="/img/bicicletas/nebula-home.jpg" width="920" height="1040" alt="Bicicleta Nebula">
           <h3 class="font-1-xl cor-11">Nebula Cosmic</h3>
           <span class=" font-2-m cor-8">R$ 2999</span>
         </a>
@@ -92,13 +94,13 @@
         <ul class="tecnologia-lista">
 
           <li>
-            <img src="/img/icones/eletrica.svg" alt="Motor eletrico">
+            <img src="/img/icones/eletrica.svg" width="24" height="24" alt="Motor eletrico">
             <h4 class="font-1-m-b cor-0">Motor Eletrico</h4>
             <p class="2-s cor-5">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
           </li>
 
           <li>
-            <img src="/img/icones/rastreador.svg" alt="Rastreador">
+            <img src="/img/icones/rastreador.svg" width="24" height="24" alt="Rastreador">
             <h4 class="font-1-m-b cor-0">Rastreador</h4>
             <p class="2-s cor-5">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
           </li>
@@ -108,7 +110,7 @@
       </div>
 
       <div class="tecnologia-imagem">
-        <img src="./img/fotos/tecnologia.jpg" alt="">
+        <img src="./img/fotos/tecnologia.jpg" width="1200" height="1920" alt="">
       </div>
 
     </div>
@@ -118,14 +120,14 @@
   <section class="parceiros" aria-label="Nossos parceiros">
     <h2 class="font-1-xxl cor-11 container">nossos parceiros<span class="ponto">.</span></h2>
     <ul class="parceiro-lista">
-      <li><img src="/img/parceiros/caravan.svg" alt="Caravan"></li>
-      <li><img src="/img/parceiros/ranek.svg" alt="ranek"></li>
-      <li><img src="/img/parceiros/handel.svg" alt="handel"></li>
-      <li><img src="/img/parceiros/dogs.svg" alt="dogs"></li>
-      <li><img src="/img/parceiros/lescone.svg" alt="lescone"></li>
-      <li><img src="/img/parceiros/flexblog.svg" alt="Flexblog"></li>
-      <li><img src="/img/parceiros/wildbeast.svg" alt="wildbeast"></li>
-      <li><img src="/img/parceiros/surfbot.svg" alt="surfboat"></li>
+      <li><img src="/img/parceiros/caravan.svg" width="140" height="38" alt="Caravan"></li>
+      <li><img src="/img/parceiros/ranek.svg" width="149" height="36" alt="ranek"></li>
+      <li><img src="/img/parceiros/handel.svg" width="139" height="50" alt="handel"></li>
+      <li><img src="/img/parceiros/dogs.svg" width="152" height="39" alt="dogs"></li>
+      <li><img src="/img/parceiros/lescone.svg" width="208" height="41" alt="lescone"></li>
+      <li><img src="/img/parceiros/flexblog.svg" width="165" height="38" alt="Flexblog"></li>
+      <li><img src="/img/parceiros/wildbeast.svg" width="196" height="34" alt="wildbeast"></li>
+      <li><img src="/img/parceiros/surfbot.svg" width="200" height="49" alt="surfboat"></li>
 
     </ul>
 
@@ -134,7 +136,7 @@
   <section class="depoimento" aria-label="Depoimento">
 
     <div class="depoimento-imagem">
-      <img src="/img/fotos/depoimento.jpg" alt="Mulher andando de bicicleta">
+      <img src="/img/fotos/depoimento.jpg" width="1560" height="1360" alt="Mulher andando de bicicleta">
     </div>
     <div class="depoimento-conteudo">
       <blockquote>
@@ -209,7 +211,7 @@
   <footer class="footer-bg">
     <div class="footer container">
 
-      <img class="footer-logo" src="./img/bikcraft.svg" alt="Logo Bikcraft">
+      <img class="footer-logo" src="./img/bikcraft.svg" width="136" height="36" alt="Logo Bikcraft">
 
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
