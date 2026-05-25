@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikcraft - bicicletas eletricas</title>
   <meta name="description" content="Termos e condições.">
+
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@1,18..144,900&family=Poppins:wght@400;600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script> document.documentElement.classList.add('js') </script>
 </head>
 
 <body>
@@ -23,8 +28,7 @@
       </a>
 
       <nav aria-label="primaria">
-        <ul class="header-menu">
-          <!-- Caso o link não esteja pegando é pq faltou o . antes da barra -->
+        <ul class="header-menu font-1-m cor-0">
           <li><a href="../bicicletas.html">Bicicletas</a></li>
           <li><a href="../seguros.html">Seguros</a></li>
           <li><a href="../contato.html">Contato</a></li>
@@ -39,11 +43,11 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl">Bicicletas feitas sobre medidas<span class="ponto">.</span></h1>
-        <p class="font-2-l">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="btn" href="../bicicletas.html">Escolha a sua</a>
+        <h1 class="font-1-xxl fadeInDown" data-anime='200'>Bicicletas feitas sobre medidas<span class="ponto">.</span></h1>
+        <p class="font-2-l fadeInDown" data-anime='400'>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="btn" data-anime='600' href="../bicicletas.html">Escolha a sua</a>
       </div>
-      <picture>
+      <picture data-anime='800' class="fadeInDown">
         <source media="(max-width:800px)" srcset="/img/bicicletas/nimbus.jpg">
         <img src="/img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta preta Nimbus">
       </picture>
@@ -156,23 +160,23 @@
         <div class="seguro-vantagens">
           <h3 class="cor-6 font-1-xl">Prata</h3>
           <ul>
-            <li class="cor-3 font-2-m-b<">
+            <li class="cor-3 font-2-m-b">
               <p>Duas trocas por ano</p>
             </li>
-            <li class="cor-3 font-2-m-b<">
+            <li class="cor-3 font-2-m-b">
               <p>Assistência Técnica</p>
             </li>
-            <li class="cor-3 font-2-m-b<">
+            <li class="cor-3 font-2-m-b">
               <p>Suporte 08h às 18h</p>
             </li>
-            <li class="cor-3 font-2-m-b<">
+            <li class="cor-3 font-2-m-b">
               <p>Suporte 08h às 18h</p>
             </li>
-            <li class="cor-3 font-2-m-b<">
+            <li class="cor-3 font-2-m-b">
               <p>Cobertura Estadual</p>
             </li>
           </ul>
-          <a class="btn secundario" href="../Bikcraft/orcamento.html">Assine já</a>
+          <a class="btn secundario" href="../seguros.html">Assine já</a>
         </div>
         <span class="seguro-valor font-1-xl cor-3">R$199</span>
       </div>
@@ -200,7 +204,7 @@
               <p>Acesso ao clube Bikcraft</p>
             </li>
           </ul>
-          <a class="btn" href="../Bikcraft/seguros.html">Assine já</a>
+          <a class="btn" href="../seguros.html">Assine já</a>
         </div>
         <span class="seguro-valor font-1-xl cor-3">R$299</span>
       </div>
@@ -260,6 +264,10 @@
     </div>
 
   </footer>
+
+
+  <script src="./js/plugins/simple-anime.js"></script>;
+  <script src="./js/javascript.js"></script>
 
 </body>
 

@@ -35,12 +35,13 @@
   background-color: var(--cor-0);
   display: block;
   margin-top: 4px;
+  transition: 0.3s;
   position: absolute;
 }
 
-.header-menu a:hover::after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
-  transition: 0.3s;
 }
 
 @media (max-width: 800px) {

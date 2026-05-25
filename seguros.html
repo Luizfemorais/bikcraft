@@ -8,9 +8,11 @@
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@1,18..144,900&family=Poppins:wght@400;600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script> document.documentElement.classList.add('js') </script>
 </head>
 
 <body id="seguros">
@@ -45,9 +47,9 @@
     </div>
 
 
-    <div class="seguro-conteudo cor-11">
+    <div class="seguro-conteudo cor-11" data-anime="200">
 
-      <div class="seguro-prata">
+      <div class="seguro-prata fadeInLeft">
         <div class="seguro-vantagens">
           <h3 class="cor-6 font-1-xl">Prata</h3>
           <ul>
@@ -67,12 +69,12 @@
               <p>Cobertura Estadual</p>
             </li>
           </ul>
-          <a class="btn secundario" href="./orcamento.html">Assine já</a>
+          <a class="btn secundario" href="./orcamento.html?tipo=seguro&produto=prata">Assine já</a>
         </div>
         <span class="seguro-valor font-1-xl cor-3">R$199</span>
       </div>
 
-      <div class="seguro-ouro ">
+      <div class="seguro-ouro fadeInRight" data-anime="400">
         <div class="seguro-vantagens">
           <h3 class="cor-p1 font-1-xl">Ouro</h3>
           <ul>
@@ -95,7 +97,7 @@
               <p>Acesso ao clube Bikcraft</p>
             </li>
           </ul>
-          <a class="btn" href="./orcamento.html">Assine já</a>
+          <a class="btn" href="./orcamento.html?tipo=seguro&produto=ouro">Assine já</a>
         </div>
         <span class="seguro-valor font-1-xl cor-3">R$299</span>
       </div>
@@ -107,7 +109,7 @@
   <article class="beneficios-bg">
     <div class="container beneficios">
       <h2 class="font-1-xxl cor-0">nossas vantagens<span class="ponto">.</span></h2>
-      <ul class="font-2-s cor-5 lista-beneficios">
+      <ul class="font-2-s cor-5 lista-beneficios ">
         <li>
           <img src="./img/icones/eletrica.svg" alt="">
           <span class="font-1-l cor-0">Reparo elétrico</span>
@@ -150,45 +152,33 @@
     <h2 class="font-1-xxl cor-11">perguntas frequentes<span class="ponto">.</span></h2>
     <dl>
       <div>
-        <dt class="font-1-m-b  cor-11">Quais as formas de pagamentos vocês aceitam ?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
+        <dt><button class="font-1-m-b cor-11" aria-controls="pergunta1" aria-expanded="true">Quais as formas de pagamentos vocês aceitam ?</button></dt>
+        <dd class="font-2-s cor-8 ativa" id="pergunta1">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-m-b  cor-11">Como posso entrar em contato ?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
+        <dt><button class="font-1-m-b cor-11" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato ?</button></dt>
+        <dd class="font-2-s cor-8" id="pergunta2">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-m-b  cor-11">Vocês possuem algum desconto ?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
+        <dt><button class="font-1-m-b cor-11" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto ?</button></dt>
+        <dd class="font-2-s cor-8" id="pergunta3">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-m-b  cor-11">Qual o tempo de garantia do produto ?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
+        <dt><button class="font-1-m-b cor-11" aria-controls="pergunta4" aria-expanded="false">Qual o tempo de garantia do produto ?</button></dt>
+        <dd class="font-2-s cor-8" id="pergunta4">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-m-b  cor-11">Posso parcelar o boleto ?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
+        <dt><button class="font-1-m-b cor-11" aria-controls="pergunta5" aria-expanded="false">Posso parcelar o boleto ?</button></dt>
+        <dd class="font-2-s cor-8" id="pergunta5">Aceitamos cartões de crédito com as bandeiras visa, mastercard, elo, e american express, para pagamentos à vista também aceitamos pix e boleto através do pagseguro.</dd>
       </div>
 
       </div>
-
     </dl>
-
-
-
   </article>
-
-
-
-
-
-
-
-
 
   <footer class="footer-bg">
     <div class="footer container">
@@ -244,6 +234,8 @@
   </footer>
 
 
+  <script src="./js/plugins/simple-anime.js" defer></script>
+  <script src="./js/javascript.js" defer></script>
 </body>
 
 </html>

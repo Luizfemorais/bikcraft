@@ -8,6 +8,7 @@
 /* Assets de cores e componentes */
 @import "./assets/componentes.css";
 @import "./assets/cores.css";
+@import "./assets/animacao.css";
 
 /* Assets de formularios */
 @import "./assets/formulario.css";

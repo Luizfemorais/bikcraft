@@ -36,7 +36,7 @@
   margin-bottom: 32px;
 }
 
-.seguro-vantagens li + li {
+.seguro-vantagens li {
   display: flex;
   align-items: center;
   margin-top: 20px;
